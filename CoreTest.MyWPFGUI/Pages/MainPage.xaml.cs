@@ -9,6 +9,7 @@ namespace CoreTest.MyWPFGUI.Pages
     /// </summary>
     public partial class MainPage : Page
     {
+        //Dependency injection at work
         public MainPage(IGetNumberService getNumberService, INavigationService navigationService)
         {
             InitializeComponent();

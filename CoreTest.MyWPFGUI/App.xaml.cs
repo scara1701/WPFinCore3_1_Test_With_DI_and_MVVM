@@ -54,9 +54,9 @@ namespace CoreTest.MyWPFGUI
         protected override void OnStartup(StartupEventArgs e)
         {
             var MainWindow = _serviceProvider.GetService<MainWindow>();
-            //Toon venster
+            //Show window
             MainWindow.Show();
-            //Laad de mainpage, automatische injectie voor vereiste services (nav + getnumber)
+            //Load mainpage, automatic injection for required services (nav + getnumber)
             MainWindow.Navigate(_serviceProvider.GetService<MainPage>());
         }
     }

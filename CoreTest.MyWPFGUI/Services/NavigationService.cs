@@ -19,6 +19,8 @@ namespace CoreTest.MyWPFGUI.Services
             OnNavigate(args);
         }
 
+
+        //Event handler created in App.xaml.cs, used for navigating with serviceprovider
         public event EventHandler<NavigateEventArgs> NavigateEvent;
 
         protected virtual void OnNavigate(NavigateEventArgs e)

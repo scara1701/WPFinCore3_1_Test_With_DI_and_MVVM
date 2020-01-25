@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace CoreTest.MyLib.Services
 {
+    /// <summary>
+    /// Returns a list of a count based upon the number passed from the UI
+    /// </summary>
     public static class ListService
     {
         public static List<MyObject> MyObjects(IGetNumberService getNumberService)
