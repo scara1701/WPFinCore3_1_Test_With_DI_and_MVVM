@@ -30,6 +30,7 @@ namespace CoreTest.MyWPFGUI
             navigationService.NavigateEvent += NavigationService_NavigateEvent;
             serviceCollection.AddSingleton<IGetNumberService>(provider => new GetNumberService(52));
             serviceCollection.AddSingleton<INavigationService>(provider => navigationService);
+            serviceCollection.AddSingleton<IDialogService>(provider => new DialogService());
             serviceCollection.AddSingleton<MainWindow>();
             serviceCollection.AddSingleton<MainPage>();
             serviceCollection.AddSingleton<DetailsPage>();

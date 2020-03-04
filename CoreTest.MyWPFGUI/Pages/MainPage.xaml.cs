@@ -10,10 +10,10 @@ namespace CoreTest.MyWPFGUI.Pages
     public partial class MainPage : Page
     {
         //Dependency injection at work
-        public MainPage(IGetNumberService getNumberService, INavigationService navigationService)
+        public MainPage(IGetNumberService getNumberService, INavigationService navigationService, IDialogService dialogService)
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel(getNumberService, navigationService);
+            this.DataContext = new MainViewModel(getNumberService, navigationService, dialogService);
         }
     }
 }

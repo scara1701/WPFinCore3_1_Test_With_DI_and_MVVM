@@ -12,5 +12,11 @@
         <Label Content="The current number is "/>
         <Label Content="{Binding CurrentNumber}" />
         <Button Command="{Binding GoToDetailsCommand}" Content="Go to details" />
+        <Button Command="{Binding ShowMessageCommand}" Content="Show messagebox!" />
+        <Label Content="{Binding SelectedFile}" />
+        <Button Command="{Binding OpenFileCommand}" Content="Select a file" />
+        <Label Content="{Binding SelectedObject}" />
+        <Button Command="{Binding SelectObjectCommand}" Content="Select an object" />
+        
     </StackPanel>
 </Page>
